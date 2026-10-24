@@ -1,0 +1,3 @@
+# Automatically generated CODEOWNERS
+# Regenerate with `make update-codeowners`
+draft-ietf-tls-composite-mldsa.md kondtir@gmail.com tim.hollebeek@digicert.com john.gray@entrust.com sfluhrer@cisco.com daniel.vangeest@cryptonext-security.com
