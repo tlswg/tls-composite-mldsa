@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-11-10T04:59:00.215144+00:00",
+  "timestamp": "2026-11-12T04:40:14.259780+00:00",
   "repo": "tlswg/tls-composite-mldsa",
   "labels": [
     {
@@ -49,6 +49,23 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOVVlSes8AAAABedaLYw",
+      "title": "Code points before publication?",
+      "url": "https://github.com/tlswg/tls-composite-mldsa/issues/1",
+      "state": "OPEN",
+      "author": "loadingalias",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "rscrypto, a Rust cryptography library, implements mldsa65_ed25519_sha512 and mldsa65_ecdsa_secp256r1_sha512 from this draft in its rustls provider, w/ the composite signatures of draft-ietf-lamps-pq-composite-sigs-19.\n\nThe draft's values are TBD, so we use private-use code points (0xFE41 and 0xFE40) behind opt-in features.\n\nDo you plan to request code points before publication? Is there another implementation of the -00 text we could test against?",
+      "createdAt": "2026-11-11T23:25:34Z",
+      "updatedAt": "2026-11-11T23:25:34Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": []
 }
