@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-11-24T07:22:39.496705+00:00",
+  "timestamp": "2026-11-26T05:44:40.777855+00:00",
   "repo": "tlswg/tls-composite-mldsa",
   "labels": [
     {
@@ -62,9 +62,17 @@
       "labels": [],
       "body": "rscrypto, a Rust cryptography library, implements mldsa65_ed25519_sha512 and mldsa65_ecdsa_secp256r1_sha512 from this draft in its rustls provider, w/ the composite signatures of draft-ietf-lamps-pq-composite-sigs-19.\n\nThe draft's values are TBD, so we use private-use code points (0xFE41 and 0xFE40) behind opt-in features.\n\nDo you plan to request code points before publication? Is there another implementation of the -00 text we could test against?",
       "createdAt": "2026-11-11T23:25:34Z",
-      "updatedAt": "2026-11-11T23:25:34Z",
+      "updatedAt": "2026-11-24T18:52:23Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "loadingalias",
+          "authorAssociation": "NONE",
+          "body": "A follow-up with two facts that bear on the code point question:\n\n1. The SignatureScheme registry uses Specification Required for entries with Recommended \"N\" (RFC 9847). The experts have assigned values to drafts: 0x0911\u20130x091C cite draft-reddy-tls-slhdsa-01.\n2. draft-ietf-lamps-pq-composite-sigs-19 is now RFC 10073, so the algorithms under this draft are stable.\n\nWould you request values for the schemes in -00 now? We would ship them in place of our private-use values.\n",
+          "createdAt": "2026-11-24T18:52:23Z",
+          "updatedAt": "2026-11-24T18:52:23Z"
+        }
+      ]
     }
   ],
   "pulls": []
